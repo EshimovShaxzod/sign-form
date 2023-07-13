@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #969696;
+}
+.main{
+    position: relative;
+    margin: 5% auto;
+    width: 860px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bfc3c5;
+}
+.main img{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+}
+.container h2{
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.container p{
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.container button{
+    padding: 12px 32px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 130px;
+    left: 110px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color: inherit;
+    color: #fff;
+}
+.container button.active{
+    transform: rotate(1.1);
+}
+.container-a{
+    z-index: 111;
+}
+.container-b{
+    z-index: -1;
+}
+
+.form-container{
+    position: absolute;
+    left: 40%;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 25px;
+}
+.form-container input{
+    width: 96%;
+    margin: 12px 0;
+    padding: 9px 12px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ddd;
+}
+.form-container h2{
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+#upBtn{
+    margin-top: 50px;
+    margin-bottom: 14px;
+    padding: 12px 32px;
+    border-radius: 30px;
+    bottom: 130px;
+    left: 110px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color: coral;
+    color: #fff;
+}
+.form-up{
+    position: absolute;
+    z-index: 161;
+    background-color: #fff;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 2s;
+}
+.fBtn{
+    padding: 12px 32px;
+    border-radius: 30px;
+    border: 1px solid black;
+    color: #000;
+    font-size: 15px;
+    cursor: pointer;
+}
+span{
+    font-size: 13px;
+    margin-right: 4px;
+    display: inline-block;
+    color: rgb(111, 129, 129);
+}
+.form-in{
+    position: absolute;
+    z-index: 131;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transition: 2s;
+}
+.container-a{
+    transition: 2s ease-out;
+}
+/* @keyframes example {
+    0%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 0;
+    }
+} */
+.container-b{
+    transition: 2s ease-out;
+}
+.main.active1 .container-a{
+    position: absolute;
+    left: 60%;
+    z-index: -1;
+    opacity: 0;
+}
+.main.active1 .container-b{
+    position: absolute;
+    left: 60%;
+    z-index: 111;
+    opacity: 1;
+}
+.container-up{
+    transition: 2s;
+}
+.main.active1 .container-up{
+    position: absolute;
+    left: 0;
+}
+.main.active1 .form-up{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+.main.active1 .form-in{
+    position: absolute;
+    left: 0;
+    opacity: 1;
+}
